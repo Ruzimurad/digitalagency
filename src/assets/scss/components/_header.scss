@@ -1,0 +1,50 @@
+.header {
+    padding: 50px 0;
+
+    &__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    &__close-button{
+        display: none;
+
+        &__close.active {
+            display: block;
+          }
+          
+
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+    }
+
+    &__menu-button {
+        display: none;
+         
+         
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+    }
+
+
+}
