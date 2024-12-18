@@ -6,6 +6,10 @@
         align-items: center;
         justify-content: space-between;
         gap: 24px;
+
+        @media screen and (max-width:598px) {
+            flex-wrap: wrap;
+        }
     }
 
     &-subtitle {
@@ -52,11 +56,17 @@
     }
 
     &-card {
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
         border-radius: 10px;
         background: $background-color;
         padding: 0 100px;
-        display: flex;
-        flex-wrap: wrap;
+
+        // @media screen and( max-width:500px) {
+            // display: flex;
+            // flex-direction: column;
+        // }
     }
 
     &-card__title {
@@ -68,7 +78,7 @@
         text-align: center;
         margin-bottom: 48px;
 
-        
+
     }
 
     &-card__subtitle {
@@ -78,10 +88,10 @@
         text-transform: capitalize;
         text-align: center;
         color: $main-color;
-        
+
     }
 
-    
+
 
 
 }
